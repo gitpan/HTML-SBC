@@ -1,0 +1,13 @@
+TODO list for Perl extension HTML::SBC
+
+MUST HAVE
+    [ your cool features here! ]
+
+NICE TO HAVE
+    - t/complex.t
+    - canonical sbc output (with right line numbers!)
+
+REQUEST FOR DISCUSSION
+    - nested lists
+    - inline quotes (HTML Q elements)
+    - better quote/cite markup: <blockquote><cite></cite>...</blockquote>

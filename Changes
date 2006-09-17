@@ -1,0 +1,45 @@
+Revision history for Perl extension HTML::SBC
+
+        Dec 2005, Jan, Feb 2006
+        - first versions with recursive parsers or regexes
+
+0.01    Sat Feb 25 23:42:17 2006
+        - new parser
+        - multilingual error messages
+
+0.02    Mon Feb 27 22:39:43 CET 2006
+        - no /emphasis/ anymore. now we have _strong_ and *emphasis*
+        - quoting markup >>quote<<cite replaced by [quote]cite
+
+0.03    Thu Mar  2 15:57:32 CET 2006
+        - some bugfixes in language parsing
+        - array of errors from sbc_translate now per reference
+        - documentation fixes
+        - sbc_description implemented
+
+0.08    Thu Jun 22 19:00:50 CEST 2006
+        - fixed some bugs
+        - inline translation with sbc_translate_inline (incl. test)
+        - small SBC change: unescaped "-" in inline context allowed
+        - source  and documentation cosmetics
+
+0.10    Sat Sep  2 14:42:17 CEST 2006
+        - interface rewrite: now using OOP
+        - vintage interface (sbc_*) still available and importable
+        - flexible error handling: iterator, error callback now available
+        - flexible link checks with an optional callback
+
+0.11    Sun Sep  3 14:17:42 CEST 2006
+        - optional support for image markup {http://foo alt text}
+
+0.12    Tue Sep  5 11:42:17 CEST 2006
+        - some cosmetics
+        - better documentation
+        - better tests
+        - now using Module::Install for makefiles
+
+0.13    Sun Sep 17 11:54:38 CEST 2006
+        - some corrections
+        - regex optimizations
+        - newlines in inline input => one space character, not empty string
+
