@@ -1,13 +1,14 @@
 TODO list for Perl extension HTML::SBC
 
 MUST HAVE
-    [ your cool features here! ]
 
 NICE TO HAVE
+    - IMG markup: {URL ALT} -> <img src="URL" alt="ALT">
     - t/complex.t
-    - canonical sbc output (with right line numbers!)
+    - flexible callback mechanism for link checks
+    - nested lists
+    - inline quotes (HTML Q elements)?
+    - canonical sbc output
 
 REQUEST FOR DISCUSSION
-    - nested lists
-    - inline quotes (HTML Q elements)
-    - better quote/cite markup: <blockquote><cite></cite>...</blockquote>
+    - better quote/cite markup: <blockquote><cite></cite>...</blockquote>?

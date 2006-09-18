@@ -17,32 +17,20 @@ Revision history for Perl extension HTML::SBC
         - documentation fixes
         - sbc_description implemented
 
-0.08    Thu Jun 22 19:00:50 CEST 2006
+0.04    Mon Mar  6 09:29:14 CET 2006
         - fixed some bugs
+        - first pre-release with complete CPAN module architecture
+          including tests
+
+0.05    Wed Mar  8 11:44:51 CET 2006
         - inline translation with sbc_translate_inline (incl. test)
-        - small SBC change: unescaped "-" in inline context allowed
-        - source  and documentation cosmetics
 
-0.10    Sat Sep  2 14:42:17 CEST 2006
-        - interface rewrite: now using OOP
-        - vintage interface (sbc_*) still available and importable
-        - flexible error handling: iterator, error callback now available
-        - flexible link checks with an optional callback
+0.06    Sat Mar 11 12:39:02 CET 2006
+        - little change: unescaped "-" in inline context allowed
 
-0.11    Sun Sep  3 14:17:42 CEST 2006
-        - optional support for image markup {http://foo alt text}
+0.07    Wed May 10 16:42:11 CEST 2006
+        - very small changes in documentation and SBC.pm
 
-0.12    Tue Sep  5 11:42:17 CEST 2006
-        - some cosmetics
-        - better documentation
-        - better tests
-        - now using Module::Install for makefiles
-
-0.13    Sun Sep 17 11:54:38 CEST 2006
-        - some corrections
-        - regex optimizations
-        - newlines in inline input => one space character, not empty string
-
-0.14    Mon Sep 18 15:55:55 CEST 2006
-        - error_callback now gets $self as second argument
+0.08    Thu Jun 22 19:00:50 CEST 2006
+        - tiny source cosmetics
 

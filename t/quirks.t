@@ -1,7 +1,5 @@
-use strict;
-use warnings;
 use Test::Simple tests => 6;
-use HTML::SBC;
+use HTML::SBC qw(sbc_translate);
 
 my @tests = (
     {
@@ -37,12 +35,9 @@ my @tests = (
     },
 );
 
-my $t = HTML::SBC->new();
 foreach my $test (@tests) {
     ok(
-        $t->sbc($test->{trans}[0]) eq $test->{trans}[1],
+        sbc_translate($test->{trans}[0]) eq $test->{trans}[1],
         $test->{title}
     );
 }
-
-__END__
