@@ -6,11 +6,11 @@ HTML::SBC - simple blog code for valid (X)HTML
 
 =head1 VERSION
 
-Version 0.13
+Version 0.14
 
 =cut
 
-our $VERSION = '0.13';
+our $VERSION = '0.14';
 
 use warnings;
 use strict;
@@ -158,7 +158,7 @@ sub _error {
         $self->{line},
     );
     push @{ $self->{errors} }, $string;
-    $self->_error_callback($string);
+    $self->_error_callback($string, $self);
 }
 } # end of lexical %error
 
@@ -447,7 +447,8 @@ value, so for this field all values are valid.
 
 Accessor method for the C<error_callback> field. The C<error_callback> callback
 is called on every error that occurs while parsing your SBC input. It gets the
-error message as first argument. Valid values are: undef, coderefs.
+error message as first argument and a reference to the translator object as
+second argument. Valid values are: undef, coderefs.
 
 =item linkcheck_callback
 

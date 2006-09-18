@@ -15,6 +15,5 @@ no_index:
 requires: 
   Carp: 0
   Exporter: 0
-  List::Util: 0
   Scalar::Util: 0
-version: 0.13
+version: 0.14

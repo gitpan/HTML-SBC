@@ -43,3 +43,6 @@ Revision history for Perl extension HTML::SBC
         - regex optimizations
         - newlines in inline input => one space character, not empty string
 
+0.14    Mon Sep 18 15:55:55 CEST 2006
+        - error_callback now gets $self as second argument
+
