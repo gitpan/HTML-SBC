@@ -1,16 +1,4 @@
-HTML-SBC version 0.01
-=====================
-
-INSTALLATION
-
-To install this module type the following:
-
-   perl Makefile.PL
-   make
-   make test
-   make install
-
-MODULE DESCRIPTION
+HTML::SBC
 
 Simple blog code (SBC) is a simple markup language, You can use it for guest
 books, blogs, wikis, boards and various other web applications. It produces
@@ -20,16 +8,43 @@ markups like *bold* and _underline_.
 HTML::SBC tries to give useful error messages and guess the right translation
 even with invalid input. It will always produce valid (X)HTML.
 
-For details, see HTML::SBC's inline POD documentation.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
 
 DEPENDENCIES
 
-No dependencies. :-)
+We only need core modules:
+
+Carp
+Scalar::Util
+List::Util
+Exporter
+
+For some tests there are the following build dependencies:
+
+Test::Simple
+Test::More
+Test::Exception
+
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with:
+
+    perldoc HTML::SBC
+
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2005, 2006 by Mirko Westermeier
+Copyright (C) 2006 Mirko Westermeier
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
-
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.

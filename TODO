@@ -1,14 +1,13 @@
 TODO list for Perl extension HTML::SBC
 
 MUST HAVE
+    - remove_hyperlink_urls without translation (for full text search)
 
 NICE TO HAVE
-    - IMG markup: {URL ALT} -> <img src="URL" alt="ALT">
     - t/complex.t
-    - flexible callback mechanism for link checks
-    - nested lists
-    - inline quotes (HTML Q elements)?
-    - canonical sbc output
+    - canonical sbc output (with right line numbers!)
 
 REQUEST FOR DISCUSSION
-    - better quote/cite markup: <blockquote><cite></cite>...</blockquote>?
+    - nested lists
+    - inline quotes (HTML Q elements)
+    - better quote/cite markup: <blockquote><cite></cite>...</blockquote>

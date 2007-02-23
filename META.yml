@@ -1,10 +1,19 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         HTML-SBC
-version:      0.08
-version_from: lib/HTML/SBC.pm
-installdirs:  site
-requires:
-
+abstract: simple blog code for valid (X)HTML
+author: Mirko Westermeier, C<< <mail at memowe.de> >>
+build_requires: 
+  Test::Exception: 0
+  Test::More: 0
+  Test::Simple: 0
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30
+generated_by: Module::Install version 0.64
+license: perl
+name: HTML-SBC
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Carp: 0
+  Exporter: 0
+  Scalar::Util: 0
+version: 0.15

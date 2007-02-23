@@ -1,5 +1,7 @@
-use Test::Simple tests => 9;
-use HTML::SBC qw(sbc_translate);
+use strict;
+use warnings;
+use Test::Simple tests => 11;
+use HTML::SBC;
 
 my @tests = (
     {   title => 'plain text',
@@ -27,6 +29,16 @@ my @tests = (
             qq(<p><a href="http://foo">bar</a></p>\n),
         ]
     }, {
+        title => 'image',
+        trans => [ '{http://foo}',
+            qq(<p><img src="http://foo" alt=""></p>\n),
+        ]
+    }, {
+        title => 'image with alt text',
+        trans => [ '{http://foo bar}',
+            qq(<p><img src="http://foo" alt="bar"></p>\n),
+        ]
+    }, {
         title => 'unordered list',
         trans => [ qq(- foo\n- bar),
             qq(<ul>\n\t<li>foo</li>\n\t<li>bar</li>\n</ul>\n),
@@ -52,9 +64,12 @@ my @tests = (
         
 );
 
+my $t = HTML::SBC->new({ image_support => 1 });
 foreach my $test (@tests) {
     ok(
-        sbc_translate($test->{trans}[0]) eq $test->{trans}[1],
+        $t->sbc($test->{trans}[0]) eq $test->{trans}[1],
         $test->{title}
     );
 }
+
+__END__
